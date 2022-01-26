@@ -1,0 +1,25 @@
+{
+    "name": "matrix-token/matrix-telegram-bot",
+    "description": "Telegram Bot Helps the Matrix Token Community",
+    "type": "project",
+    "require": {
+        "irazasyed/telegram-bot-sdk": "^3.4",
+        "vlucas/phpdotenv": "^5.4",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "MatrixToken\\MatrixTelegramBot\\": "src/"
+        },
+        "files": [ "helpers.php" ]
+    },
+    "authors": [
+        {
+            "name": "aboodma58",
+            "email": "34406204+aboodma@users.noreply.github.com"
+        }
+    ],
+    "scripts": {
+        "dev": "php -S localhost:8080 -t public &>/dev/null & expose share localhost:8080 --subdomain=matrixbot"
+    }
+}
